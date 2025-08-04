@@ -46,12 +46,12 @@ def cube_to_string(cube):
 
 
 color_map = {
-    'W': "resources/colors/white.png",
-    'Y': "resources/colors/yellow.png",
-    'R': "resources/colors/red.png",
-    'O': "resources/colors/orange.png",
-    'G': "resources/colors/green.png",
-    'B': "resources/colors/blue.png"
+    'W': "Resources/Colors/white.png",
+    'Y': "Resources/Colors/yellow.png",
+    'R': "Resources/Colors/red.png",
+    'O': "Resources/Colors/orange.png",
+    'G': "Resources/Colors/green.png",
+    'B': "Resources/Colors/blue.png"
 }
 for color in color_map:
     color_map[color] = resize_keep_aspect(load_image_with_alpha(color_map[color]), 70, 70)
