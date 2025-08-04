@@ -49,7 +49,7 @@ def overlay_image(bg, overlay, position):
     return bg
 
 def draw_arrow_for_move(frame, move):
-    image_path = f"resources/{move}.png"
+    image_path = f"Resources/{move}.png"
     h, w = frame.shape[:2]
     size = (150, 150)
     if os.path.exists(image_path):
@@ -224,7 +224,7 @@ if len(cube_faces) == 6:
                 else:
                     cv2.putText(frame, "Rotate cube to back", (30, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
 
-                    image_path = "resources/TURN_BACK.png"
+                    image_path = "Resources/TURN_BACK.png"
                     turn_back_img = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
                     if turn_back_img is not None:
                         h, w = frame.shape[:2]
